@@ -1,0 +1,9 @@
+{
+    "image1": "hwQQABAAAAAAAAAA8A8AAAAA8P//+wAAAPA/s7vr7gAAvzOzu+/0D/A+4//+/7wPX+Szv0G/3fFPRTP+T969/VRF4+5E3t2xVEXj7kTevb1PRTP+T97d8V/ks79Bv7398D7j//7/vA8AvzOzu+/0DwDwP7O76+4AAADw///7AAAAAAAA8A8AAA==",
+    "image2": "hwQQABAAAAAAAMDMzAwAAADA7O7u7gIAAOzu7u7uLgAA7u4iIuLuAuDuLiIiIuIC4O4iIiIiIi7g7i4iIiIiLs7MLCIiIiLkfGcsIiIiIuR37iIiIiIi5ODiRCIiIkLi4CJVJCIiQg4ALlQkIiIkDgAuIiIiROIAAOAuIiLiDgAAAODu7g4AAA==",
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myImages"
+    }
+}
