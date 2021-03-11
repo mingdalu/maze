@@ -1,7 +1,7 @@
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Food, function (sprite, otherSprite) {
     info.changeScoreBy(1)
     music.baDing.play()
-    tiles.placeOnRandomTile(mySprite2, sprites.builtin.oceanSand9)
+    tiles.placeOnRandomTile(mySprite2, sprites.builtin.oceanSand8)
     tiles.placeOnRandomTile(mySprite2, sprites.castle.tilePath5)
 })
 let mySprite2: Sprite = null
@@ -44,7 +44,7 @@ mySprite2 = sprites.create(img`
     . . . 2 2 e e 4 4 4 2 e e . . . 
     . . . . . 2 2 e e e e . . . . . 
     `, SpriteKind.Food)
-tiles.placeOnRandomTile(mySprite2, sprites.builtin.oceanSand9)
+tiles.placeOnRandomTile(mySprite2, sprites.builtin.oceanSand8)
 info.setScore(0)
 game.onUpdate(function () {
     if (info.score() % 5 == 0) {
@@ -53,6 +53,9 @@ game.onUpdate(function () {
         tiles.setTilemap(tilemap`層級1`)
     }
     if (mySprite2.tileKindAt(TileDirection.Center, sprites.builtin.forestTiles0)) {
-        game.over(false)
+        tiles.placeOnRandomTile(mySprite2, sprites.builtin.oceanSand8)
+    }
+    if (mySprite2.tileKindAt(TileDirection.Center, sprites.castle.tileGrass2)) {
+        tiles.placeOnRandomTile(mySprite2, sprites.castle.tilePath5)
     }
 })
